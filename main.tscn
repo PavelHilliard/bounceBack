@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://q6tm0gt0eqex"]
+
+[ext_resource type="Script" uid="uid://dirph5vf6k5ah" path="res://new_script.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bccijlonxcldw" path="res://icon.svg" id="1_ig7tw"]
+
+[node name="Node" type="Node" unique_id=464966694]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1934324588]
+script = ExtResource("1_0xm2m")
+
+[node name="background" type="ColorRect" parent="Node2D" unique_id=1508367838]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6658655, 0.00034086197, 0.667893, 1)
+
+[node name="Packet" type="Sprite2D" parent="Node2D" unique_id=1440338444]
+position = Vector2(420, 142)
+texture = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="Node2D" unique_id=899839449]
+offset_left = -1.0
+offset_top = 226.0
+offset_right = 309.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 64
+text = "Client"
+horizontal_alignment = 1
+
+[node name="client" type="ColorRect" parent="Node2D" unique_id=756649349]
+offset_right = 302.0
+offset_bottom = 245.0
+color = Color(1, 0, 1, 1)
+
+[node name="server" type="ColorRect" parent="Node2D" unique_id=925173325]
+offset_left = 804.0
+offset_right = 1150.0
+offset_bottom = 258.0
+
+[node name="Label2" type="Label" parent="Node2D" unique_id=1295627386]
+offset_left = 799.0
+offset_top = 246.0
+offset_right = 1154.0
+offset_bottom = 571.0
+theme_override_font_sizes/font_size = 45
+text = "server
+"
+horizontal_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node2D" unique_id=869193784]
+offset_left = 304.0
+offset_top = 480.0
+offset_right = 857.0
+offset_bottom = 639.0
+theme_override_font_sizes/normal_font_size = 95
+text = "press space"
